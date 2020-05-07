@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid {
+  height: 350px;
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  cursor: url('cursor.png'), auto;
+}
+
+.hole {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.mole {
+  background-image: url('mole.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 10px;
+}
+
+.bouncy {
+  color: red;
+  animation: bouncy 5s infinite linear;
+  position: relative;
+}
+
+@keyframes bouncy {
+  0% {
+    top: 0em
+  }
+
+  40% {
+    top: 0em
+  }
+
+  43% {
+    top: -0.9em
+  }
+
+  46% {
+    top: 0em
+  }
+
+  48% {
+    top: -0.4em
+  }
+
+  50% {
+    top: 0em
+  }
+
+  100% {
+    top: 0em;
+  }
+}
